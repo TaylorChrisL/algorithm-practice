@@ -8,7 +8,7 @@
 def reverse_string(string)
   i = 0
   j = string.length - 1
-  while i != j
+  while i < j
     temp = string[i]
     string[i] = string[j]
     string[j] = temp
@@ -19,4 +19,4 @@ def reverse_string(string)
   return string
 end
 
-p reverse_string("abcde")
+p reverse_string("abcdef")

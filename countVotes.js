@@ -13,13 +13,9 @@
 // loop through the array, look for matches to increase vote count
 
 function countVotes(array) {
-  votes = {};
+  let votes = {};
   array.forEach((vote) => {
-    if (votes[vote]) {
-      votes[vote]++;
-    } else {
-      votes[vote] = 1;
-    }
+    votes[vote] ? votes[vote]++ : (votes[vote] = 1);
   });
   return votes;
 }
